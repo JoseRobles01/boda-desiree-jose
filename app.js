@@ -4,7 +4,7 @@
 
 // ─── CONFIGURACIÓN ───────────────────────────────────────────
 // Después de desplegar el Apps Script, pega aquí la URL:
-const APPS_SCRIPT_URL = 'PEGAR_URL_DEL_APPS_SCRIPT_AQUI';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxWgp6AaoYOVxYQzPL7KAlCTvl6gljishdboGn3T6ePahu79Au_CpkZ_YflyvqQDhcR/exec';
 
 // ID del spreadsheet y GID de la hoja
 const SHEET_ID  = '1Rps9SwfUvwzmuVtb1m7Bsxj3jaEEdQE6b5D10dIMLmQ';
