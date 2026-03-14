@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desi & Jose · 08.05.2026</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== SIDEBAR ===== -->
+  <nav class="sidebar" id="sidebar">
+    <ul class="nav-list">
+      <li>
+        <a href="#" class="nav-link active" data-page="inicio">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+          <span>Inicio</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link" data-page="regalos">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v7a1 1 0 001 1h12a1 1 0 001-1v-7"/><path d="M12 8V20M9 8c0-1.657 1.343-3 3-3s3 1.343 3 3"/><path d="M8.5 5C7.12 5 6 6.12 6 7.5S7.12 10 8.5 10c.83 0 1.5-.67 1.5-1.5V5H8.5z"/><path d="M15.5 5C16.88 5 18 6.12 18 7.5S16.88 10 15.5 10c-.83 0-1.5-.67-1.5-1.5V5h1.5z"/></svg>
+          <span>Lista de Regalos</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link" data-page="mapa">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Cómo Llegar</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link" data-page="dresscode">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H7L3 9l4 2 2-2v12h6V9l2 2 4-2-4-6h-2"/><path d="M9 3c0 1.657 1.343 3 3 3s3-1.343 3-3"/></svg>
+          <span>Dress Code</span>
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar-date-footer">08 · 05 · 2026</div>
+  </nav>
+
+  <!-- Mobile hamburger button -->
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <!-- ── HOME PAGE ── -->
+    <section class="page active" id="page-inicio">
+      <div class="home-wrapper">
+        <div class="home-card">
+          <p class="script-nos">Nos casamos</p>
+          <h1 class="names-title">DESI <span class="names-plus">+</span> JOSE</h1>
+
+          <p class="invite-body">
+            Llega el día que tanto soñamos y queremos compartirlo contigo.
+            Te invitamos a celebrar juntos una velada íntima y llena de amor.
+          </p>
+
+          <div class="leaf-divider">
+            <span class="leaf-line"></span>
+            <span class="leaf-icon">✦</span>
+            <span class="leaf-line"></span>
+          </div>
+
+          <div class="date-hero">08.05.2026</div>
+
+          <div class="event-info">
+            <p class="day-label">Viernes</p>
+            <div class="event-block">
+              <p class="event-time"><strong>4:00 pm</strong> · Recepción</p>
+              <p class="event-address">Calle 4 #275, Urb. El Rancho, Miraflores</p>
+            </div>
+          </div>
+
+          <div class="leaf-divider">
+            <span class="leaf-line"></span>
+            <span class="leaf-icon">✦</span>
+            <span class="leaf-line"></span>
+          </div>
+
+          <div class="footer-note">
+            <p>Vestimenta cocktail</p>
+            <p>Confirmar asistencia hasta el 25 de marzo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GIFTS PAGE ── -->
+    <section class="page" id="page-regalos">
+      <div class="page-inner">
+        <header class="page-header">
+          <h2 class="page-title">Lista de Regalos</h2>
+          <p class="page-subtitle">
+            Si quieres llegar con un regalo, preparamos esta lista para inspirarte.
+            Reserva el tuyo para que no se repita — cómpralo y tráelo el día de la boda.
+          </p>
+        </header>
+
+        <div class="gifts-grid" id="giftsGrid">
+          <div class="loading-state">
+            <div class="spinner"></div>
+            <p>Cargando regalos…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MAP PAGE ── -->
+    <section class="page" id="page-mapa">
+      <div class="page-inner">
+        <header class="page-header">
+          <h2 class="page-title">Cómo Llegar</h2>
+        </header>
+
+        <div class="venue-cards">
+          <div class="venue-card">
+            <div class="venue-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <div>
+              <p class="venue-time">4:00 pm · Recepción</p>
+              <p class="venue-name">Urb. El Rancho, Miraflores</p>
+              <p class="venue-addr">C. 4 #275, Lima 15048</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrapper">
+          <iframe
+            title="Ubicación recepción"
+            src="https://maps.google.com/maps?q=-12.129798,-77.0052334&output=embed&hl=es&z=17"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <a
+          href="https://maps.app.goo.gl/ipHaWoA7pC1qGVs39"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-directions">
+          Abrir en Google Maps
+        </a>
+      </div>
+    </section>
+
+    <!-- ── DRESS CODE PAGE ── -->
+    <section class="page" id="page-dresscode">
+      <div class="page-inner">
+        <header class="page-header">
+          <h2 class="page-title">Dress Code</h2>
+          <p class="page-subtitle">
+            La vestimenta es <strong>cocktail</strong> — elegante pero sin llegar al traje de gala.
+            Piensa en colores suaves, telas ligeras y looks que te hagan sentir bien toda la noche.
+          </p>
+        </header>
+
+        <div class="dresscode-grid">
+
+          <!-- ELLAS -->
+          <div class="dresscode-card">
+            <div class="dresscode-img-wrap">
+              <img src="dress_code_ref1.jpg" alt="Referencia dress code ellas" class="dresscode-img" loading="lazy" />
+              <div class="dresscode-label">Ellas</div>
+            </div>
+            <div class="dresscode-tips">
+              <ul>
+                <li>Vestido midi o maxi fluido</li>
+                <li>Jumpsuit o pantsuit elegante</li>
+                <li>Colores libres — evitar blanco y negro puro</li>
+                <li>Tacones, sandalias o flats elegantes</li>
+                <li>Accesorios discretos o llamativos, tú decides</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ELLOS -->
+          <div class="dresscode-card">
+            <div class="dresscode-img-wrap">
+              <img src="dress_code_ref2.jpg" alt="Referencia dress code ellos" class="dresscode-img" loading="lazy" />
+              <div class="dresscode-label">Ellos</div>
+            </div>
+            <div class="dresscode-tips">
+              <ul>
+                <li>Blazer o saco (no es necesario traje completo)</li>
+                <li>Camisa de vestir — con o sin corbata</li>
+                <li>Pantalón de vestir o chino</li>
+                <li>Zapatos de cuero, mocasines o loafers</li>
+                <li>Colores neutros o pasteles son perfectos</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="dresscode-footer">
+          ¡Lo más importante es que te sientas cómodo/a y disfrutes la noche con nosotros!
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RESERVE MODAL ===== -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+      <div class="modal-gift-img-wrap">
+        <img id="modalGiftImg" src="" alt="" class="modal-gift-img" />
+      </div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-price" id="modalPrice"></p>
+      <p class="modal-note">Al reservar, este regalo quedará marcado como tomado y no podrá elegirlo nadie más.</p>
+      <button class="btn-confirm" id="confirmReserveBtn">Reservar este regalo</button>
+      <p class="modal-error" id="modalError"></p>
+    </div>
+  </div>
+
+  <!-- ===== SUCCESS TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
