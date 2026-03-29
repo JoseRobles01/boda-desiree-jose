@@ -883,3 +883,23 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.btn-tienda {
+  display: block;
+  margin: 0 20px 14px;
+  padding: 9px 0;
+  border-radius: 8px;
+  border: 1.5px solid var(--sage);
+  background: transparent;
+  color: var(--sage);
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: background 0.18s, color 0.18s;
+}
+.btn-tienda:hover {
+  background: var(--sage);
+  color: #fff;
+}
