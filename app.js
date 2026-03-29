@@ -185,6 +185,7 @@ function renderGifts() {
     const price      = formatPrice(gift['Precio']);
     const photo      = gift['Foto URL'] || '';
     const id         = gift['id'];
+    const url        = gift['URL'] || '';
 
     return `
       <div class="gift-card ${isReserved ? 'reserved' : ''}" data-id="${id}">
@@ -200,6 +201,7 @@ function renderGifts() {
           <p class="gift-name">${name}</p>
           ${desc ? `<p class="gift-desc">${desc}</p>` : ''}
           ${price ? `<p class="gift-price">${price}<span class="gift-price-label">Precio de referencia</span></p>` : ''}
+          ${url ? `<a class="btn-tienda" href="${url}" target="_blank" rel="noopener">Ver en tienda</a>` : ''}
         </div>
         ${isReserved
           ? `<div class="reserved-label">Ya fue reservado ✓<span class="reserved-note">¿Necesitas un cambio? Avísanos</span></div>`
