@@ -903,3 +903,23 @@ body {
   background: var(--sage);
   color: #fff;
 }
+
+.dresscode-extra-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--gray-text);
+  text-align: center;
+  margin: 36px 0 20px;
+  font-style: italic;
+}
+.dresscode-grid-extra {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 600px) {
+  .dresscode-grid-extra {
+    grid-template-columns: 1fr;
+  }
+}
